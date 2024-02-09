@@ -4,6 +4,8 @@ sumber.onkeyup = function () {
   var hasil = document.getElementById("jogja");
   var hasil2 = document.getElementById("ngalam");
   var sumbertext = sumber.value;
+  
+  //walikanJogja
   var konversi = "";
 
   var baris1 = ["h", "n", "c", "r", "k"];
@@ -52,5 +54,9 @@ sumber.onkeyup = function () {
     }
   }
   hasil.value = konversi;
-  hasil2.value = "Tes";
+
+  //walikanNgalam
+  
+  var reversedWord = sumbertext.split("").reverse().join("");
+  hasil2.value = reversedWord;
 };
